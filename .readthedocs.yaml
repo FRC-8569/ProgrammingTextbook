@@ -1,0 +1,13 @@
+version: 2
+
+# Build environment
+build:
+  os: ubuntu-24.04
+  tools:
+    python: "3.13"
+  commands:
+    - rm -rf _readthedocs/html
+    - cp -r build/html _readthedocs/html
+
+# Skip Sphinx entirely
+sphinx: null
