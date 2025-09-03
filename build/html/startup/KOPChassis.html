@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>一切的開始 &#8212; Programming Tutorial</title>
+    <title>KOP底盤教學 &#8212; Programming Tutorial</title>
   
   
   
@@ -41,11 +41,11 @@
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="../_static/translations.js?v=cbf116e0"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'startup/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'startup/KOPChassis';</script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜尋" href="../search.html" />
-    <link rel="next" title="API 介紹" href="APIIntroduce.html" />
-    <link rel="prev" title="FRC8569の程式教學區" href="../index.html" />
+    <link rel="next" title="程式的種類" href="ProgrammingType.html" />
+    <link rel="prev" title="API 介紹" href="APIIntroduce.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="zh-TW"/>
   </head>
@@ -151,10 +151,10 @@
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">根目錄:</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">一切的開始</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">一切的開始</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="APIIntroduce.html">API 介紹</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">KOP底盤教學</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ProgrammingType.html">程式的種類</a></li>
-<li class="toctree-l2"><a class="reference internal" href="KOPChassis.html">KOP底盤教學</a></li>
 </ul>
 </details></li>
 </ul>
@@ -211,7 +211,7 @@
       
       
       
-      <li><a href="../_sources/startup/index.rst" target="_blank"
+      <li><a href="../_sources/startup/KOPChassis.rst" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="下載原始檔"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -293,7 +293,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>一切的開始</h1>
+    <h1>KOP底盤教學</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -307,29 +307,16 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>一切的開始<a class="headerlink" href="#id1" title="連結到這個標頭">#</a></h1>
+  <section id="kop">
+<h1>KOP底盤教學<a class="headerlink" href="#kop" title="連結到這個標頭">#</a></h1>
+<p>一開始就不要太難，讓KOP底盤動起來吧！</p>
+<div class="important admonition">
+<p class="admonition-title">任務獲得</p>
+<p>讓KOP底盤動起來</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">備註</p>
-<p>這邊是幹話，如果不想看的話可以略過</p>
-</div>
-<p>因為Java在FRC的程式佔比相比於其他兩個語言(C++, java)(還有一個LabView那個直接放生算了)有壓倒性勝利(但也是有強隊(118)在用C++寫)，所以之後的文章都會用Java來寫</p>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">一切的開始</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="APIIntroduce.html">API 介紹</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="APIIntroduce.html#rev">REV系列</a></li>
-<li class="toctree-l2"><a class="reference internal" href="APIIntroduce.html#ctre">CTRE系列</a></li>
-<li class="toctree-l2"><a class="reference internal" href="APIIntroduce.html#id4">馬達控制器的設定</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="ProgrammingType.html">程式的種類</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ProgrammingType.html#timed-based">Timed Based</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ProgrammingType.html#command-based">Command Based</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="KOPChassis.html">KOP底盤教學</a></li>
-</ul>
+<p>因為要銜接向量底盤(Swerve)的程式，所以這邊的語法就會比較囉唆一點</p>
 </div>
 </section>
 
@@ -345,20 +332,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../index.html"
+       href="APIIntroduce.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">上一頁</p>
-        <p class="prev-next-title">FRC8569の程式教學區</p>
+        <p class="prev-next-title">API 介紹</p>
       </div>
     </a>
     <a class="right-next"
-       href="APIIntroduce.html"
+       href="ProgrammingType.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">下一頁</p>
-        <p class="prev-next-title">API 介紹</p>
+        <p class="prev-next-title">程式的種類</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
