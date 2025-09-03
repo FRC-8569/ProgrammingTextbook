@@ -10,6 +10,7 @@ build:
   tools:
     python: "3.12"
   commands:
+    - ls
     - rm -rf _readthedocs/html
     - cp -r build/html _readthedocs/html
 
