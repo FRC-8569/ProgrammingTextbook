@@ -11,7 +11,7 @@ build:
     python: "3.12"
   commands:
     - ls
-    - mkdir _readthedocs/html
+    - mkdir -p _readthedocs/html
     - cp -r build/html/* _readthedocs/html
 
 # Build documentation in the "docs/" directory with Sphinx
